@@ -7,6 +7,8 @@ body {
 
 .container {
   padding: 48px;
+  display: flow;
+  gap: 16px;
 }
 
 .card {

@@ -1,0 +1,22 @@
+mixin pokemonCard(pokemon)
+
+    div.card
+        div.card-header
+            div.card-title=pokemon.name
+            div.health=pokemon.health
+            img.card-header-image(src=pokemon.elementimage)
+        div.card-body
+            img.card-body-image(src=pokemon.image)
+            div.card-details
+                div.attacks=pokemon.attack1
+                div.damage=pokemon.damage1
+                img.card-details-image(src=pokemon.elementimage)
+            div.card-details
+                div.attacks=pokemon.attack2
+                div.damage=pokemon.damage2
+                img.card-details-image(src=pokemon.elementimage)
+            div.description
+                img.description-image(src=pokemon.weakness)
+                img.description-image2(src=pokemon.retreatcost)
+            div.description
+                | Weakness Resistance Retreat Cost
